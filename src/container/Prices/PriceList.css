@@ -1,0 +1,87 @@
+.priceList {
+    flex-direction: column;
+    background: var(--color-black);
+}
+
+.priceList-title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.priceList-menu {
+    width: 100%;
+    margin: 2rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.priceList-heading {
+    font-family: var(--font-base);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 58.5px;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+}
+
+.priceList-memberships,
+.priceList-classes {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+
+.priceList-img {
+    width: 410px;
+    margin: 0 2rem;
+}
+
+.priceList-img img {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.priceList_items {
+    display: flex;
+    flex-direction: column;
+
+    margin: 2rem 0;
+    width: 100%;
+}
+
+@media screen and (min-width: 2000px) {
+    .priceList-img {
+        width: 650px;
+    }
+
+    .priceList-img img {
+        height: 920px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .priceList-menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .priceList-img {
+        margin: 3rem 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .priceList-img {
+        width: 100%;
+    }
+
+    .priceList-heading {
+        font-size: 35px;
+        line-height: 48.5px;
+    }
+}
